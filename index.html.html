@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <style>
+        /* Estilo CSS para centralizar o texto */
+        .centro {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="centro">
+        <p>SURPRESA!!.</p>
+    </div>
+
+<style>
+  #movingButton {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+</style>
+</head>
+<body>
+
+<button id="movingButton" onclick="moveButton()">Clique no botão para ganhar um açai do leo!</button>
+
+<script>
+function moveButton() {
+  var button = document.getElementById("movingButton");
+  
+  var newTop = Math.random() * (window.innerHeight - 50);
+  var newLeft = Math.random() * (window.innerWidth - 100);
+  
+  button.style.top = newTop + "px";
+  button.style.left = newLeft + "px";
+}
+</script>
+
+</body>
+</html>
